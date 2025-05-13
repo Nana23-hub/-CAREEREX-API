@@ -18,8 +18,8 @@ async function main() {
 
 }
 
-app.listen(PORT, ()=> {
-  main().catch(err => console.log(err));
+app.listen(PORT, async()=> {
+ await main().catch(err => console.log(err));
   console.log(`Step 1: Server is running on port ${PORT}`)
 
   
