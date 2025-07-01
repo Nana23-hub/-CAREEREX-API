@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require  ('mongoose');  
 
 const schoolSchema = new mongoose.Schema({
     itemName: {
@@ -24,4 +24,4 @@ const schoolSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 const School = mongoose.model("mySchool", schoolSchema);
-export default School;
+module.exports = School;
