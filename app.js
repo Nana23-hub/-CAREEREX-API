@@ -24,6 +24,10 @@ mongoose.connect(process.env.MONGODB_URL)
         });
     })
 
+    app.get('/', (req,res)=>{
+        res.json({"Message": "Welcome to my first API"});
+    })
+
 app.use('/api', router);
 //ayooladele1234
 //aishatcareerexproject
